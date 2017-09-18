@@ -7,8 +7,16 @@
     "test": "mocha --recursive -R spec --ui bdd",
     "test:watch": "mocha --watch ./test ./"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebluecow/base-math.git"
+  },
   "author": "Scott Bline",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thebluecow/base-math/issues"
+  },
+  "homepage": "https://github.com/thebluecow/base-math#readme",
   "devDependencies": {
     "chain": "^0.1.3",
     "gulp": "^3.9.1",
