@@ -11,6 +11,8 @@
   "license": "MIT",
   "devDependencies": {
     "chain": "^0.1.3",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.0",
     "mocha": "^3.5.3"
   }
 }

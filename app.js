@@ -223,12 +223,12 @@ function baseMath() {
 
         // print message if MAX_SAFE_INTEGER is met
         if (numbers.max_safe) {
-            console.log('one or more values exceeds the MAX_SAFE_INTEGER.', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER');
+            // console.log('one or more values exceeds the MAX_SAFE_INTEGER.', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER');
         }
 
         // print message if MIN_SAFE_INTEGER is met
         if (numbers.min_safe) {
-            console.log('one or more values falls below the MIN_SAFE_INTEGER.', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER');
+            // console.log('one or more values falls below the MIN_SAFE_INTEGER.', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER');
         }
 
         // if it's floating, return float
@@ -263,12 +263,13 @@ function baseMath() {
             return _mathTime(num1, num2, base, 'multiply');
         },
         sqrt: function(num, base) {
+            var number;
             if ((num).toString().indexOf('.') != -1) {
-                var num = _returnFloatInt(num);
+                number = _returnFloatInt(num);
             } else {
-                var num = _toInt(num, base);
+                number = _toInt(num, base);
             }
-            var n2 = Math.sqrt(num);
+            var n2 = Math.sqrt(number);
             // if base 10, return float
             if (!base || base == 10) {
                 return n2;
@@ -277,18 +278,19 @@ function baseMath() {
         },
         pow: function(num1, num2, base) {
             var exponent = _returnFloatInt(num2);
+            var number;
 
             if ((num1).toString().indexOf('.') != -1) {
-                var num = _returnFloatInt(num1);
+                number = _returnFloatInt(num1);
             } else {
-                var num = _toInt(num1, base);
+                number = _toInt(num1, base);
             }
 
-            var n2 = Math.pow(num, exponent);
+            var n2 = Math.pow(number, exponent);
             if (!base || base == 10) {
                 return n2;
             }
             return _toBase(n2, base);
         }
     }
-};
+}
