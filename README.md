@@ -6,7 +6,7 @@ base-math is a package that performs basic mathematical operations regardless of
     npm install base-math --save
  
 ## API
-    var bmath = require('base-math');
+    var bmath = require('base-math')();
  
 ## usage
 base-math takes two required parameters and one optional base parameter. For example, bmath.add(**'101'**, **'1221'**, *8*) would return **1322** in base 8. The package defaults to a base 10 numbering system so that the same operation bmath.add(**'101'**, **'1221'**) without a base type would also result in **1322** with an entirely different meaning. Basically, be aware of what you're converting.
