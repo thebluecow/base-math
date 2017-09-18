@@ -27,7 +27,7 @@ var number = bmath.add(45, 21);
 ```
  
 ```javascript
-subtract(x, y,base)
+subtract(x, y, base)
 ```
 Subtracts two numbers and returns the result. Takes an optional base parameter. Defaults to base 10.
 ```javascript
@@ -39,7 +39,7 @@ var number = bmath.subtract(45, 21);
 ```
  
 ```javascript
-divide(x, y,base)
+divide(x, y, base)
 ```
 Divides two numbers and returns the result. Takes an optional base parameter. Defaults to base 10.
 ```javascript
