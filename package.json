@@ -1,0 +1,16 @@
+{
+  "name": "base-math",
+  "version": "1.0.0",
+  "description": "Used to perform basic math operations against different base numbering systems.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --recursive -R spec --ui bdd",
+    "test:watch": "mocha --watch ./test ./"
+  },
+  "author": "Scott Bline",
+  "license": "MIT",
+  "devDependencies": {
+    "chain": "^0.1.3",
+    "mocha": "^3.5.3"
+  }
+}
